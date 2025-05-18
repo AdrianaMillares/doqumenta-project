@@ -11,7 +11,7 @@ const BlogPost = () => {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await fetch(`http://localhost:5000/api/prensa/noticias/${id}`);
+                const res = await fetch(`https://doqumenta.onrender.com/api/prensa/noticias/${id}`);
                 if (!res.ok) throw new Error("No se encontró la noticia");
                 const data = await res.json();
                 setPost(data);

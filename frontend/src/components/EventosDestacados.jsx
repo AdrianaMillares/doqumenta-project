@@ -9,7 +9,7 @@ const ProximosEventos = () => {
     useEffect(() => {
         const fetchEventos = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/eventos");
+                const response = await fetch("https://doqumenta.onrender.com/api/eventos");
                 const data = await response.json();
 
                 const hoy = new Date().toISOString().split("T")[0];

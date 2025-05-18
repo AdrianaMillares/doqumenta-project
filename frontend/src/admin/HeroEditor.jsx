@@ -9,7 +9,7 @@ function HeroEditor() {
 
     // Cargar hero actual desde backend al montar
     useEffect(() => {
-        fetch("http://localhost:5000/api/hero")
+        fetch("https://doqumenta.onrender.com/api/hero")
             .then((res) => res.json())
             .then((data) => {
                 setTitulo(data.titulo || "");
@@ -42,7 +42,7 @@ function HeroEditor() {
         };
 
         try {
-            const res = await fetch("http://localhost:5000/api/hero", {
+            const res = await fetch("https://doqumenta.onrender.com/api/hero", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"

@@ -9,7 +9,7 @@ function PressPage() {
     useEffect(() => {
         const fetchNoticias = async () => {
             try {
-                const res = await fetch("http://localhost:5000/api/prensa/noticias");
+                const res = await fetch("https://doqumenta.onrender.com/api/prensa/noticias");
                 const data = await res.json();
                 setNoticias(data);
             } catch (error) {

@@ -9,7 +9,7 @@ function Programacion() {
     const [selectedCategoria, setSelectedCategoria] = useState("Todos");
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/eventos")
+        fetch("https://doqumenta.onrender.com/api/eventos")
             .then((res) => res.json())
             .then((data) => {
                 setEventos(data);

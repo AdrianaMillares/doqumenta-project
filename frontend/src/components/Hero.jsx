@@ -9,7 +9,7 @@ const Hero = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/hero') // Cambia el puerto si tu backend usa otro
+        fetch('https://doqumenta.onrender.com/api/hero') // Cambia el puerto si tu backend usa otro
             .then(response => {
                 if (!response.ok) throw new Error('No se pudo obtener el hero');
                 return response.json();
