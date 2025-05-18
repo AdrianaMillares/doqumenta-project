@@ -1,0 +1,90 @@
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-input,
+.category-select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.reset-button {
+    padding: 0.5rem 1rem;
+    background-color: #008467;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #006b57;
+}
+
+.filtros-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.filtros-controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filtros-controles select,
+.filtros-controles input[type="date"],
+.filtros-controles button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.filtros-controles button {
+    background-color: #03695f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.leyenda {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.leyenda-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+}
+
+.color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.leyenda-texto {
+    font-size: 0.9rem;
+    color: #555;
+}

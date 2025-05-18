@@ -1,0 +1,93 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    height: 28px;
+    max-width: 100%;
+}
+
+/* Links normales */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease;
+}
+
+.navbar-links a:hover {
+    opacity: 0.7;
+}
+
+/* Hamburguesa oculta en escritorio */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Estilo de transformación */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.navbar-links a.active {
+    color: #10b981;
+    /* verde tipo Tailwind */
+    border-bottom: 2px solid #10b981;
+    font-weight: bold;
+    transition: color 0.3s ease, border 0.3s ease;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: black;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}

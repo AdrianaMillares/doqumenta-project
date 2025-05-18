@@ -1,0 +1,57 @@
+.hero-admin-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-admin-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.hero-admin-form input[type="text"],
+.hero-admin-form textarea,
+.hero-admin-form input[type="file"] {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.hero-admin-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.hero-admin-form button {
+    padding: 0.6rem 1rem;
+    background-color: #03695f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-admin-form button:hover {
+    background-color: #025047;
+}
+
+.hero-preview img {
+    margin-top: 0.5rem;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+}

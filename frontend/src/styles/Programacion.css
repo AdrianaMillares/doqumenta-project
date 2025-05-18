@@ -1,0 +1,143 @@
+/* CONTENEDOR PRINCIPAL */
+.filtros-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* CONTROLES DE FILTRO */
+.filtros-controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Solo aplica a controles personalizados */
+.filtro-input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    min-width: 200px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.datepicker-wrapper {
+    min-width: 200px;
+}
+
+/* BOTÓN LIMPIAR */
+.filtros-controles button {
+    background-color: #03695f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filtros-controles button:hover {
+    background-color: #025047;
+}
+
+/* LEYENDA DE CATEGORÍAS */
+.leyenda {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.leyenda-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+}
+
+.color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* TEXTO DE LEYENDA */
+.leyenda-texto {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+}
+
+/* GRID DE EVENTOS */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* MENSAJE DE NO EVENTOS */
+.no-events {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin-top: 2rem;
+}
+
+.react-datepicker__day.evento-activo {
+    position: relative;
+}
+
+.react-datepicker__day.evento-activo::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    /* antes tenías 6px */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: #008467;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* RESPONSIVO PARA CELULARES */
+@media (max-width: 768px) {
+    .filtros-controles {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .filtro-input {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .leyenda {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leyenda-texto {
+        font-size: 0.85rem;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}

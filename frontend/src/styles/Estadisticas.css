@@ -1,0 +1,26 @@
+.estadisticas {
+    background-color: #f3f4f6;
+    /* gris claro */
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.estadistica {
+    flex: 1 1 100px;
+}
+
+.estadistica h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #15803d;
+    /* verde oscuro */
+}
+
+.estadistica p {
+    font-size: 0.9rem;
+    color: #333;
+}

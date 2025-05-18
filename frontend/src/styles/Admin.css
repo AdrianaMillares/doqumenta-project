@@ -1,0 +1,32 @@
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 220px;
+    background-color: #03695f;
+    color: white;
+    padding: 1rem;
+}
+
+.admin-sidebar h2 {
+    margin-bottom: 1rem;
+}
+
+.admin-sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.admin-sidebar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.admin-main {
+    flex-grow: 1;
+    padding: 2rem;
+}

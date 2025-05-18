@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "Proyección Especial: Documental XYZ",
+    "fecha": "2024-03-12",
+    "lugar": "Cine Doqumenta",
+    "categoria": "Proyección"
+  },
+  {
+    "id": 2,
+    "titulo": "Conversatorio con Directoras",
+    "fecha": "2024-03-22",
+    "lugar": "Auditorio Cultural",
+    "categoria": "Conversatorio"
+  }
+]

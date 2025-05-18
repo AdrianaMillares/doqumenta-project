@@ -1,0 +1,26 @@
+body {
+  background-color: white;
+  color: #1a202c;
+  /* equivalente a text-gray-900 */
+  font-family: sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+:root {
+  --color-proyeccion: #3b82f6;
+  --color-conversatorio: #ef4444;
+  --color-exhibicion: #22c55e;
+  --color-taller: #f97316;
+  --color-mesa: #8b5cf6;
+
+  --bg-card: #ffffff;
+  --text-main: #003333;
+  --text-secondary: #444444;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
