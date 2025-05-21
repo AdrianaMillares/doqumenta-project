@@ -6,7 +6,7 @@ const cors = require("cors");
 dotenv.config();
 
 const app = express();
-const whitelist = ['https://doqumenta.org', 'http://localhost:3000'];
+const whitelist = ['https://doqumenta.org', 'http://localhost:5173'];
 
 app.use(cors({
     origin: function (origin, callback) {
